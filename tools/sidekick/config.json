@@ -1,0 +1,6 @@
+{
+  "project": "AEM Block Collection",
+  "editUrlLabel": "AEM Editor",
+  "editUrlPattern": "{{contentSourceUrl}}{{pathname}}?cmd=open"
+}
+

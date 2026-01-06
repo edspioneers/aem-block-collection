@@ -1,6 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p8661-e624335.adobeaemcloud.com/bin/franklin.delivery/sameryadav/aemuniversaleditorlab/main"
+    url: "https://author-p8661-e624335.adobeaemcloud.com/bin/franklin.delivery/edspioneers/aem-block-collection/main"
     type: "markup"
     suffix: ".html"
-
