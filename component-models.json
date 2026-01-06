@@ -1,0 +1,442 @@
+[
+  {
+    "id": "page-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "jcr:title",
+        "label": "Title"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "jcr:description",
+        "label": "Description"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "keywords",
+        "multi": true,
+        "label": "Keywords"
+      }
+    ]
+  },
+  {
+    "id": "image",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Alt Text"
+      }
+    ]
+  },
+  {
+    "id": "title",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "label": "Title Type",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "button",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "name": "linkText",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "name": "linkTitle",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "linkType",
+        "label": "Type",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "primary",
+            "value": "primary"
+          },
+          {
+            "name": "secondary",
+            "value": "secondary"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section",
+    "fields": [
+      {
+        "component": "text",
+        "name": "name",
+        "label": "Section Name",
+        "description": "The label shown for this section in the Content Tree"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Highlight",
+            "value": "highlight"
+          },
+          {
+            "name": "Dark",
+            "value": "dark"
+          },
+          {
+            "name": "Light",
+            "value": "light"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "accordion-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "label",
+        "label": "Label",
+        "description": "The accordion item title/label"
+      },
+      {
+        "component": "richtext",
+        "name": "body",
+        "value": "",
+        "label": "Body Content",
+        "valueType": "string",
+        "description": "The accordion item body content"
+      }
+    ]
+  },
+  {
+    "id": "card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Image Alt Text"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "carousel-slide",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Slide Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Image Alt Text"
+      },
+      {
+        "component": "richtext",
+        "name": "content",
+        "value": "",
+        "label": "Slide Content",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "columns",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "columns",
+        "value": "2",
+        "label": "Number of Columns"
+      },
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "rows",
+        "value": "1",
+        "label": "Number of Rows"
+      }
+    ]
+  },
+  {
+    "id": "embed",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "url",
+        "label": "Embed URL",
+        "description": "URL to embed (YouTube, Vimeo, Twitter, or any embeddable URL)"
+      },
+      {
+        "component": "reference",
+        "name": "placeholder",
+        "label": "Placeholder Image",
+        "multi": false,
+        "description": "Optional placeholder image shown before embed loads"
+      }
+    ]
+  },
+  {
+    "id": "footer",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Footer Fragment",
+        "description": "Path to the footer content fragment"
+      }
+    ]
+  },
+  {
+    "id": "form",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "source",
+        "label": "Form Source",
+        "description": "URL to the JSON form definition"
+      },
+      {
+        "component": "aem-content",
+        "name": "submit",
+        "label": "Submit URL",
+        "description": "URL to submit the form data to"
+      }
+    ]
+  },
+  {
+    "id": "fragment",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Fragment Reference",
+        "description": "Path to the content fragment to include"
+      }
+    ]
+  },
+  {
+    "id": "header",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "nav",
+        "label": "Navigation Fragment",
+        "description": "Path to the navigation content fragment"
+      },
+      {
+        "component": "boolean",
+        "name": "breadcrumbs",
+        "label": "Show Breadcrumbs",
+        "description": "Enable breadcrumb navigation"
+      }
+    ]
+  },
+  {
+    "id": "hero",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Background Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt Text",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Hero Content",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "modal",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "fragmentUrl",
+        "label": "Modal Content",
+        "description": "Path to the fragment containing modal content"
+      }
+    ]
+  },
+  {
+    "id": "quote",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "quotation",
+        "value": "",
+        "label": "Quotation",
+        "valueType": "string",
+        "description": "The quote text"
+      },
+      {
+        "component": "richtext",
+        "name": "attribution",
+        "value": "",
+        "label": "Attribution",
+        "valueType": "string",
+        "description": "Quote attribution (author, source)"
+      }
+    ]
+  },
+  {
+    "id": "search",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "source",
+        "label": "Search Index",
+        "description": "Path to the search index JSON (defaults to /query-index.json)"
+      }
+    ]
+  },
+  {
+    "id": "table-row",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "cells",
+        "value": "",
+        "label": "Row Cells",
+        "valueType": "string",
+        "description": "Table row cell content"
+      }
+    ]
+  },
+  {
+    "id": "tab-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "label",
+        "label": "Tab Label",
+        "description": "The tab button label"
+      },
+      {
+        "component": "richtext",
+        "name": "content",
+        "value": "",
+        "label": "Tab Content",
+        "valueType": "string",
+        "description": "The content shown when this tab is active"
+      }
+    ]
+  },
+  {
+    "id": "video",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "url",
+        "label": "Video URL",
+        "description": "URL to the video (YouTube, Vimeo, or direct video URL)"
+      },
+      {
+        "component": "reference",
+        "name": "placeholder",
+        "label": "Placeholder Image",
+        "multi": false,
+        "description": "Optional placeholder image shown before video plays"
+      },
+      {
+        "component": "boolean",
+        "name": "autoplay",
+        "label": "Autoplay",
+        "description": "Automatically play the video when visible"
+      }
+    ]
+  }
+]
+

@@ -1,2 +1,6 @@
 mountpoints:
-  /: https://drive.google.com/drive/folders/1Gwwrujv0Z4TxJM8askdqQkHSD969dGK7
+  /:
+    url: "https://author-p8661-e624335.adobeaemcloud.com/bin/franklin.delivery/sameryadav/aemuniversaleditorlab/main"
+    type: "markup"
+    suffix: ".html"
+
